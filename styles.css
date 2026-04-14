@@ -33,11 +33,10 @@ body {
 
 /* HERO */
 .hero {
-  height: 300px;
+  height: 320px;
   background-image: url("hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .hero-overlay {
@@ -49,9 +48,8 @@ body {
 }
 
 .hero-overlay h1 {
-  color: #fff;
+  color: white;
   font-size: 44px;
-  font-weight: bold;
 }
 
 /* CONTENT */
@@ -81,8 +79,8 @@ body {
   border-radius: 3px;
   font-weight: bold;
   cursor: pointer;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
 }
 
 .secondary {
@@ -93,6 +91,5 @@ body {
 
 .primary {
   background: #1976d2;
-  color: #fff;
+  color: white;
 }
-
