@@ -1,175 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Cloud Service Excellence</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-<body>
+/* Header */
+/* Header */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 15px 40px;
+}
 
-<!-- Header -->
-<header class="top-header">
+/* Logo */
+.logo img {
+    height: 50px;
+}
 
-    <!-- Logo (Replace src with your SharePoint image link) -->
-    <div class="logo">
-        <img src="https://dxcportal.sharepoint.com/:i:/r/sites/HybridCloud-ClientSuccessCapability/Shared%20Documents/General/07.%20Tasks%20%26%20Activities/12.%20Daily%20Tracker/03.%20Azure%20POD%202/Page/image%20(5).png?csf=1&web=1&e=UMha7e" alt="Company Logo">
-    </div>
+/* Navigation */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
 
-    <!-- Navigation -->
-    <nav class="nav-menu">
-        <a href="#">Home</a>
-        <a href="#">Our Focus Areas</a>
-        <a href="#">Cloud Operations</a>
-        <a href="#">Customer Stories</a>
-        <a href="#">Key links</a>
-        <a href="#">Contact Us</a>
-        <a href="#">AIM</a>
-    </nav>
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
 
-</header>
+.nav-menu a:hover {
+    color: #0078d4;
+}
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Public Cloud Service Excellence</h1>
-    </div>
-</section>
-<section class="cloud-excellence">
-    <h1>Cloud Operational Excellence</h1>
+/* Hero Section */
+.hero {
+    height: 350px;
+    background: linear-gradient(rgba(0, 40, 80, 0.7), rgba(0, 40, 80, 0.7)),
+                url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
 
-    <p>
-        Cloud Operational Excellence is increasingly crucial in today’s digital landscape, offering organizations the flexibility, scalability, and efficiency needed to thrive in the modern business environment. It intricately balances controlling costs and ensuring robust security measures within cloud service governance, providing insights into key strategies and best practices to optimize cloud utilization effectively.
-    </p>
+/* Hero Text */
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
 
-    <h2>Understanding Cloud Operational Excellence</h2>
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 
-    <p>
-        Cloud operational excellence encompasses the processes, tools, and strategies utilized by Customers/DXC to oversee and optimize their utilization of cloud resources. This includes provisioning and deprovisioning cloud services, monitoring performance metrics, optimizing costs, ensuring security compliance, and managing user access and permissions. By effectively managing these aspects, the benefits of cloud computing can be leveraged while mitigating risks and maximizing value.
-    </p>
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+.cloud-excellence {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #333;
+}
 
-    <h2>Striking the Balance</h2>
+.cloud-excellence h1, .cloud-excellence h2 {
+    color: #004080;
+}
 
-    <p>
-        In conclusion, effective Cloud Operational Excellence requires a delicate balance between controlling costs and ensuring robust security measures. By implementing proactive cost control strategies and robust security practices, organizations can optimize their cloud utilization, enhance operational efficiency, and mitigate security risks effectively. As cloud adoption continues to accelerate, prioritizing effective cloud operational excellence will be essential to leverage the full potential of cloud computing while safeguarding their data, applications, processes, and infrastructure in the digital age.
-    </p>
+.cloud-excellence h1 {
+    margin-bottom: 20px;
+}
 
-    <p>
-        In a customer success-oriented approach, the relationship between the customer and the company is viewed as a partnership. The success of the customer is directly linked to the success of the business. This approach recognizes that acquiring a new customer is just the beginning, and the real value comes from fostering a positive and enduring relationship.
-    </p>
-      <!-- Buttons -->
-    <div class="header-buttons">
-        <button class="btn-primary">Delivery Wise</button>
-        <button class="btn-secondary">Region Wise</button>
-    </div>
-</section>
-    <section class="org-view">
-    <h2>Organization View</h2>
+.cloud-excellence h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 
-    <!-- Dropdown item -->
-    <div class="dropdown-item">
-        <div class="dropdown-header">
-            <span>Public Cloud GDN India</span>
-            <span class="arrow">&#9662;</span>
-        </div>
+.cloud-excellence p {
+    margin-bottom: 15px;
+}
+.header-buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+}
 
-        <div class="dropdown-content">
-            <img src="https://dxcportal.sharepoint.com/:i:/r/sites/HybridCloud-ClientSuccessCapability/Shared%20Documents/General/07.%20Tasks%20%26%20Activities/12.%20Daily%20Tracker/03.%20Azure%20POD%202/Page/image%20(5).png?csf=1&web=1&e=UMha7e" alt="Public Cloud GDN India">
-        </div>
-    </div>
+.header-buttons button {
+    min-width: 260px;
+    height: 60px;
+    background-color: #0067b8; /* ✅ true blue */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
 
-    <!-- Second dropdown -->
-    <div class="dropdown-item">
-        <div class="dropdown-header">
-            <span>Public Cloud GDN India Cloud Operational Excellence</span>
-            <span class="arrow">&#9662;</span>
-        </div>
+.header-buttons button:hover {
+    background-color: #005a9e; /* darker blue on hover */
+    transform: translateY(-2px);
+}
+/* Organization View */
+.org-view {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-        <div class="dropdown-content">
-            <img src="https://dxcportal.sharepoint.com/:i:/r/sites/HybridCloud-ClientSuccessCapability/Shared%20Documents/General/07.%20Tasks%20%26%20Activities/12.%20Daily%20Tracker/03.%20Azure%20POD%202/Page/image%20(5).png?csf=1&web=1&e=UMha7e" alt="Cloud Operational Excellence">
-        </div>
-    </div>
-  
+.org-view h2 {
+    color: #004080; /* matches screenshot heading */
+    margin-bottom: 20px;
+}
+/* Organization View */
+.org-view {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
 
-</section>
-     <section class="key-pillars-carousel">
-  <h2>Key Pillars</h2>
+.org-view h2 {
+    color: #005a9e; /* same purple heading as screenshot */
+    margin-bottom: 30px;
+}
 
-  <div class="pillar-scroll">
+/* Dropdown item */
+.dropdown-item {
+    border-bottom: 1px solid #e0e0e0;
+}
 
-    <!-- Onboarding -->
-    <div class="pillar-card-img">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Onboarding">
-      <div class="pillar-text">
-        <h3>Onboarding</h3>
-        <p>
-          Automated onboarding of workloads hosted with Infra as Code approach.
-          Automated validation of workloads to monitor any associated drifts to control cost.
-        </p>
-      </div>
-    </div>
+/* Header row */
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-    <!-- Observability -->
-    <div class="pillar-card-img">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Observability">
-      <div class="pillar-text">
-        <h3>Observability</h3>
-        <p>
-          Ability to effectively infer internal states of the system based on external output,
-          achieved through logs, metrics, tracing, reports and trend analysis.
-        </p>
-      </div>
-    </div>
+/* Arrow */
+.dropdown-header .arrow {
+    transition: transform 0.3s ease;
+}
 
-    <!-- Compliance -->
-    <div class="pillar-card-img">
-      <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72" alt="Compliance">
-      <div class="pillar-text">
-        <h3>Compliance</h3>
-        <p>
-          Native framework enables DXC customers to achieve compliance across backup,
-          security and zero‑touch automation seamlessly.
-        </p>
-      </div>
-    </div>
+/* Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    padding-bottom: 20px;
+}
 
-    <!-- Automation -->
-    <div class="pillar-card-img">
-      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Automation">
-      <div class="pillar-text">
-        <h3>Automation</h3>
-        <p>
-          Automation services enable standardized, intelligent,
-          and innovative solutions to enhance business outcomes cost‑effectively.
-        </p>
-      </div>
-    </div>
+/* Image styling */
+.dropdown-content img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 6px;
+}
 
-    <!-- FinOps -->
-    <div class="pillar-card-img">
-      <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9" alt="FinOps">
-      <div class="pillar-text">
-        <h3>FinOps</h3>
-        <p>
-          Drive better business outcomes by analyzing and optimizing cloud spend,
-          minimizing waste and maximizing profits.
-        </p>
-      </div>
-    </div>
+/* Active state */
+.dropdown-item.active .dropdown-content {
+    display: block;
+}
 
-  </div>
-</section>    
- 
-<script>
-        document.querySelectorAll(".dropdown-header").forEach(header => {
-            header.addEventListener("click", () => {
-                header.parentElement.classList.toggle("active");
-            });
-        });
-    </script>
+.dropdown-item.active .arrow {
+    transform: rotate(180deg);
+}
+/* Section */
+/* ================================
+   Key Pillars – Section Container
+  ================================ */
+.org-view,
+.key-pillars-carousel {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+}
 
-  
+/* Section Heading */
+.key-pillars-carousel h2 {
+    color: #004080;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
 
-</body>
-</html>
+/* ================================
+   Horizontal Scroll Container
+   ================================ */
+.pillar-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    /* Hide scrollbar (all browsers) */
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* IE / Edge */
+}
+
+.pillar-scroll::-webkit-scrollbar {
+    display: none;                  /* Chrome / Safari */
+}
+
+/* ================================
+   Pillar Card
+   ================================ */
+.pillar-card-img {
+    position: relative;
+    width: 360px;
+    height: 230px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #000;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Image inside card */
+.pillar-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================================
+   Text Overlay on Image
+   ================================ */
+.pillar-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.2)
+    );
+    color: #ffffff;
+}
+
+/* Title */
+.pillar-text h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Description */
+.pillar-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* ================================
+   Responsive (Mobile)
+   ================================ */
+@media (max-width: 768px) {
+    .pillar-card-img {
+        width: 280px;
+        height: 200px;
+    }
+}
