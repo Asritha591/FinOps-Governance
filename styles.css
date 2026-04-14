@@ -34,7 +34,8 @@ body {
 /* HERO */
 .hero {
   height: 320px;
-  background-image: url("https://images.unsplash.com/photo-1531498053-7d0e8c0a3b1a?auto=format&fit=crop&w=1600&q=80");
+  background-image: linear-gradient(rgba(0, 40, 80, 0.7), rgba(0, 40, 80, 0.7)),
+                url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
